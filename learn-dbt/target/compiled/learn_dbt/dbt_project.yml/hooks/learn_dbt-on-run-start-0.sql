@@ -1,0 +1,1 @@
+USE WAREHOUSE transform_wh;
