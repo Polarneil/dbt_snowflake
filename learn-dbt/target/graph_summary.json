@@ -1,1 +1,0 @@
-{"_invocation_id": "8c3c2326-13fd-4b7a-97fd-e69db6a372d5", "linked": {"0": {"name": "model.learn_dbt.my_first_model", "type": "model", "succ": [1]}, "1": {"name": "model.learn_dbt.my_second_model", "type": "model"}, "2": {"name": "seed.learn_dbt.raw_data", "type": "seed"}, "3": {"name": "operation.learn_dbt.learn_dbt-on-run-start-0", "type": "operation"}}}
