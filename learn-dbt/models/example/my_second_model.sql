@@ -1,7 +1,7 @@
 {{ config(materialized='view') }}
 
 select
-    id,
-    description,
+    order_id,
+    amount,
     'processed' as status
 from {{ ref('my_first_model') }}

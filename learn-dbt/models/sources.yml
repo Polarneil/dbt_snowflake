@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: analytics  # This is the name of your database in Snowflake
+    database: analytics
+    schema: dbt      # This is the schema where your raw_data table resides
+    tables:
+      - name: raw_data  # This is the name of the table in Snowflake

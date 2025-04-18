@@ -1679,3 +1679,266 @@ from analytics.dbt.my_first_model
 [0m15:24:55.091092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10796f930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10597b6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1052537d0>]}
 [0m15:24:55.091317 [debug] [MainThread]: Flushing usage events
 [0m15:24:55.292575 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:21:37.711261 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113899550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114dabd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114dabed0>]}
+
+
+============================== 11:21:37.714346 | 569847e5-e9ac-4e0b-a586-6fb4bde67860 ==============================
+[0m11:21:37.714346 [info ] [MainThread]: Running with dbt=1.9.4
+[0m11:21:37.714637 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/logs', 'version_check': 'True', 'profiles_dir': '/Users/neil.lewis/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:21:37.932620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '569847e5-e9ac-4e0b-a586-6fb4bde67860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115964050>]}
+[0m11:21:37.951287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '569847e5-e9ac-4e0b-a586-6fb4bde67860', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1157c2250>]}
+[0m11:21:37.951935 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m11:21:38.026070 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m11:21:38.079434 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m11:21:38.079696 [debug] [MainThread]: Partial parsing: updated file: learn_dbt://models/example/my_second_model.sql
+[0m11:21:38.079842 [debug] [MainThread]: Partial parsing: updated file: learn_dbt://models/example/my_first_model.sql
+[0m11:21:38.145874 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.learn_dbt.my_first_model' (models/example/my_first_model.sql) depends on a source named 'analytics.raw_data' which was not found
+[0m11:21:38.172059 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.5066003, "process_in_blocks": "0", "process_kernel_time": 0.236367, "process_mem_max_rss": "132775936", "process_out_blocks": "0", "process_user_time": 0.784354}
+[0m11:21:38.172338 [debug] [MainThread]: Command `dbt run` failed at 11:21:38.172292 after 0.51 seconds
+[0m11:21:38.172539 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cb6a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115cb6550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115f0d130>]}
+[0m11:21:38.172723 [debug] [MainThread]: Flushing usage events
+[0m11:21:38.399598 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:23:42.783524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105ce1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f3d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1069f3ed0>]}
+
+
+============================== 11:23:42.786484 | a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e ==============================
+[0m11:23:42.786484 [info ] [MainThread]: Running with dbt=1.9.4
+[0m11:23:42.786799 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/neil.lewis/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m11:23:42.961809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107408050>]}
+[0m11:23:42.982138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10710a250>]}
+[0m11:23:42.982737 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m11:23:43.032096 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m11:23:43.085237 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 2 files changed.
+[0m11:23:43.085509 [debug] [MainThread]: Partial parsing: added file: learn_dbt://models/sources.yml
+[0m11:23:43.085662 [debug] [MainThread]: Partial parsing: updated file: learn_dbt://models/example/my_first_model.sql
+[0m11:23:43.085790 [debug] [MainThread]: Partial parsing: updated file: learn_dbt://models/example/my_second_model.sql
+[0m11:23:43.235500 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107557e50>]}
+[0m11:23:43.267835 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/manifest.json
+[0m11:23:43.269385 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/semantic_manifest.json
+[0m11:23:43.280384 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1070c6d50>]}
+[0m11:23:43.280582 [info ] [MainThread]: Found 1 seed, 1 operation, 2 models, 1 source, 474 macros
+[0m11:23:43.280722 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10779b150>]}
+[0m11:23:43.281391 [info ] [MainThread]: 
+[0m11:23:43.281522 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:23:43.281620 [info ] [MainThread]: 
+[0m11:23:43.281795 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:23:43.283448 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_analytics'
+[0m11:23:43.329657 [debug] [ThreadPool]: Using snowflake connection "list_analytics"
+[0m11:23:43.329851 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "connection_name": "list_analytics"} */
+show terse schemas in database analytics
+    limit 10000
+[0m11:23:43.329956 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:23:44.151257 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.821 seconds
+[0m11:23:44.155664 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now list_analytics_dbt)
+[0m11:23:44.167354 [debug] [ThreadPool]: Using snowflake connection "list_analytics_dbt"
+[0m11:23:44.167915 [debug] [ThreadPool]: On list_analytics_dbt: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "connection_name": "list_analytics_dbt"} */
+show objects in analytics.dbt limit 10000;
+[0m11:23:44.352673 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.184 seconds
+[0m11:23:44.357704 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107832c30>]}
+[0m11:23:44.362347 [debug] [MainThread]: Writing injected SQL for node "operation.learn_dbt.learn_dbt-on-run-start-0"
+[0m11:23:44.368642 [info ] [MainThread]: 1 of 1 START hook: learn_dbt.on-run-start.0 .................................... [RUN]
+[0m11:23:44.369264 [debug] [MainThread]: Using snowflake connection "master"
+[0m11:23:44.369480 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "connection_name": "master"} */
+USE WAREHOUSE transform_wh;
+[0m11:23:44.369677 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:23:44.709163 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.339 seconds
+[0m11:23:44.709969 [info ] [MainThread]: 1 of 1 OK hook: learn_dbt.on-run-start.0 ....................................... [[32mOK[0m in 0.35s]
+[0m11:23:44.710206 [info ] [MainThread]: 
+[0m11:23:44.713221 [debug] [Thread-1 (]: Began running node model.learn_dbt.my_first_model
+[0m11:23:44.713536 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt.my_first_model ................................ [RUN]
+[0m11:23:44.713792 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_analytics_dbt, now model.learn_dbt.my_first_model)
+[0m11:23:44.713982 [debug] [Thread-1 (]: Began compiling node model.learn_dbt.my_first_model
+[0m11:23:44.715864 [debug] [Thread-1 (]: Writing injected SQL for node "model.learn_dbt.my_first_model"
+[0m11:23:44.716568 [debug] [Thread-1 (]: Began executing node model.learn_dbt.my_first_model
+[0m11:23:44.734051 [debug] [Thread-1 (]: Writing runtime sql for node "model.learn_dbt.my_first_model"
+[0m11:23:44.735058 [debug] [Thread-1 (]: Using snowflake connection "model.learn_dbt.my_first_model"
+[0m11:23:44.735255 [debug] [Thread-1 (]: On model.learn_dbt.my_first_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "node_id": "model.learn_dbt.my_first_model"} */
+create or replace transient table analytics.dbt.my_first_model
+         as
+        (
+
+select
+    order_id,
+    customer_id,
+    order_date,
+    amount
+from analytics.dbt.raw_data
+where amount > 0
+        );
+[0m11:23:46.115862 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.380 seconds
+[0m11:23:46.138329 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107863410>]}
+[0m11:23:46.138851 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt.my_first_model ........................... [[32mSUCCESS 1[0m in 1.42s]
+[0m11:23:46.139228 [debug] [Thread-1 (]: Finished running node model.learn_dbt.my_first_model
+[0m11:23:46.139777 [debug] [Thread-1 (]: Began running node model.learn_dbt.my_second_model
+[0m11:23:46.140125 [info ] [Thread-1 (]: 2 of 2 START sql view model dbt.my_second_model ................................ [RUN]
+[0m11:23:46.140407 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.learn_dbt.my_first_model, now model.learn_dbt.my_second_model)
+[0m11:23:46.140598 [debug] [Thread-1 (]: Began compiling node model.learn_dbt.my_second_model
+[0m11:23:46.142533 [debug] [Thread-1 (]: Writing injected SQL for node "model.learn_dbt.my_second_model"
+[0m11:23:46.143024 [debug] [Thread-1 (]: Began executing node model.learn_dbt.my_second_model
+[0m11:23:46.155474 [debug] [Thread-1 (]: Writing runtime sql for node "model.learn_dbt.my_second_model"
+[0m11:23:46.156247 [debug] [Thread-1 (]: Using snowflake connection "model.learn_dbt.my_second_model"
+[0m11:23:46.156446 [debug] [Thread-1 (]: On model.learn_dbt.my_second_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "node_id": "model.learn_dbt.my_second_model"} */
+create or replace   view analytics.dbt.my_second_model
+  
+   as (
+    
+
+select
+    order_id,
+    amount,
+    description,
+    'processed' as status
+from analytics.dbt.my_first_model
+  );
+[0m11:23:46.295724 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01bbc657-0002-b7a1-0007-cb620003c13a
+[0m11:23:46.296275 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 9 at position 4
+invalid identifier 'DESCRIPTION'
+[0m11:23:46.301705 [debug] [Thread-1 (]: Database Error in model my_second_model (models/example/my_second_model.sql)
+  000904 (42000): SQL compilation error: error line 9 at position 4
+  invalid identifier 'DESCRIPTION'
+  compiled code at target/run/learn_dbt/models/example/my_second_model.sql
+[0m11:23:46.302129 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a692c26c-dec3-47d9-8b6b-3c4f7bd9a72e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107cff330>]}
+[0m11:23:46.302661 [error] [Thread-1 (]: 2 of 2 ERROR creating sql view model dbt.my_second_model ....................... [[31mERROR[0m in 0.16s]
+[0m11:23:46.303045 [debug] [Thread-1 (]: Finished running node model.learn_dbt.my_second_model
+[0m11:23:46.303458 [debug] [Thread-4 (]: Marking all children of 'model.learn_dbt.my_second_model' to be skipped because of status 'error'.  Reason: Database Error in model my_second_model (models/example/my_second_model.sql)
+  000904 (42000): SQL compilation error: error line 9 at position 4
+  invalid identifier 'DESCRIPTION'
+  compiled code at target/run/learn_dbt/models/example/my_second_model.sql.
+[0m11:23:46.304968 [debug] [MainThread]: Connection 'master' was left open.
+[0m11:23:46.305240 [debug] [MainThread]: On master: Close
+[0m11:23:46.407566 [debug] [MainThread]: Connection 'model.learn_dbt.my_second_model' was left open.
+[0m11:23:46.408066 [debug] [MainThread]: On model.learn_dbt.my_second_model: Close
+[0m11:23:46.512985 [info ] [MainThread]: 
+[0m11:23:46.514059 [info ] [MainThread]: Finished running 1 project hook, 1 table model, 1 view model in 0 hours 0 minutes and 3.23 seconds (3.23s).
+[0m11:23:46.515573 [debug] [MainThread]: Command end result
+[0m11:23:46.535832 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/manifest.json
+[0m11:23:46.537219 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/semantic_manifest.json
+[0m11:23:46.541983 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/run_results.json
+[0m11:23:46.542327 [info ] [MainThread]: 
+[0m11:23:46.542582 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m11:23:46.542753 [info ] [MainThread]: 
+[0m11:23:46.542978 [error] [MainThread]:   Database Error in model my_second_model (models/example/my_second_model.sql)
+  000904 (42000): SQL compilation error: error line 9 at position 4
+  invalid identifier 'DESCRIPTION'
+  compiled code at target/run/learn_dbt/models/example/my_second_model.sql
+[0m11:23:46.543138 [info ] [MainThread]: 
+[0m11:23:46.543305 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 TOTAL=3
+[0m11:23:46.545395 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 3.8011904, "process_in_blocks": "0", "process_kernel_time": 0.252894, "process_mem_max_rss": "148815872", "process_out_blocks": "0", "process_user_time": 1.106468}
+[0m11:23:46.545700 [debug] [MainThread]: Command `dbt run` failed at 11:23:46.545635 after 3.80 seconds
+[0m11:23:46.545950 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f811f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f89bec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1078a95d0>]}
+[0m11:23:46.546168 [debug] [MainThread]: Flushing usage events
+[0m11:23:46.717303 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m11:24:51.453517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120991550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1236abd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1236abed0>]}
+
+
+============================== 11:24:51.456512 | 64a27695-d0c0-42f7-9b55-d0e864cab079 ==============================
+[0m11:24:51.456512 [info ] [MainThread]: Running with dbt=1.9.4
+[0m11:24:51.456779 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/logs', 'profiles_dir': '/Users/neil.lewis/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m11:24:51.614940 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '64a27695-d0c0-42f7-9b55-d0e864cab079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1243b4050>]}
+[0m11:24:51.633580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '64a27695-d0c0-42f7-9b55-d0e864cab079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1240c2250>]}
+[0m11:24:51.633991 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m11:24:51.680454 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m11:24:51.744409 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:24:51.744681 [debug] [MainThread]: Partial parsing: updated file: learn_dbt://models/example/my_second_model.sql
+[0m11:24:51.863031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '64a27695-d0c0-42f7-9b55-d0e864cab079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12450a750>]}
+[0m11:24:51.898079 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/manifest.json
+[0m11:24:51.899705 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/semantic_manifest.json
+[0m11:24:51.910506 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '64a27695-d0c0-42f7-9b55-d0e864cab079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12407ed50>]}
+[0m11:24:51.910734 [info ] [MainThread]: Found 1 seed, 1 operation, 2 models, 1 source, 474 macros
+[0m11:24:51.910881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64a27695-d0c0-42f7-9b55-d0e864cab079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x124333070>]}
+[0m11:24:51.911626 [info ] [MainThread]: 
+[0m11:24:51.911765 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m11:24:51.911864 [info ] [MainThread]: 
+[0m11:24:51.912052 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m11:24:51.913903 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_analytics'
+[0m11:24:51.946814 [debug] [ThreadPool]: Using snowflake connection "list_analytics"
+[0m11:24:51.947025 [debug] [ThreadPool]: On list_analytics: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "connection_name": "list_analytics"} */
+show terse schemas in database analytics
+    limit 10000
+[0m11:24:51.947139 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:24:52.397723 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.450 seconds
+[0m11:24:52.402331 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_analytics, now list_analytics_dbt)
+[0m11:24:52.414322 [debug] [ThreadPool]: Using snowflake connection "list_analytics_dbt"
+[0m11:24:52.414926 [debug] [ThreadPool]: On list_analytics_dbt: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "connection_name": "list_analytics_dbt"} */
+show objects in analytics.dbt limit 10000;
+[0m11:24:52.563611 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.148 seconds
+[0m11:24:52.568611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '64a27695-d0c0-42f7-9b55-d0e864cab079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1255b2a90>]}
+[0m11:24:52.576271 [debug] [MainThread]: Writing injected SQL for node "operation.learn_dbt.learn_dbt-on-run-start-0"
+[0m11:24:52.581826 [info ] [MainThread]: 1 of 1 START hook: learn_dbt.on-run-start.0 .................................... [RUN]
+[0m11:24:52.582716 [debug] [MainThread]: Using snowflake connection "master"
+[0m11:24:52.582986 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "connection_name": "master"} */
+USE WAREHOUSE transform_wh;
+[0m11:24:52.583246 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:24:52.929888 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.346 seconds
+[0m11:24:52.932828 [info ] [MainThread]: 1 of 1 OK hook: learn_dbt.on-run-start.0 ....................................... [[32mOK[0m in 0.36s]
+[0m11:24:52.933649 [info ] [MainThread]: 
+[0m11:24:52.937702 [debug] [Thread-1 (]: Began running node model.learn_dbt.my_first_model
+[0m11:24:52.938282 [info ] [Thread-1 (]: 1 of 2 START sql table model dbt.my_first_model ................................ [RUN]
+[0m11:24:52.938711 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_analytics_dbt, now model.learn_dbt.my_first_model)
+[0m11:24:52.939006 [debug] [Thread-1 (]: Began compiling node model.learn_dbt.my_first_model
+[0m11:24:52.945519 [debug] [Thread-1 (]: Writing injected SQL for node "model.learn_dbt.my_first_model"
+[0m11:24:52.946227 [debug] [Thread-1 (]: Began executing node model.learn_dbt.my_first_model
+[0m11:24:52.966418 [debug] [Thread-1 (]: Writing runtime sql for node "model.learn_dbt.my_first_model"
+[0m11:24:52.967425 [debug] [Thread-1 (]: Using snowflake connection "model.learn_dbt.my_first_model"
+[0m11:24:52.967645 [debug] [Thread-1 (]: On model.learn_dbt.my_first_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "node_id": "model.learn_dbt.my_first_model"} */
+create or replace transient table analytics.dbt.my_first_model
+         as
+        (
+
+select
+    order_id,
+    customer_id,
+    order_date,
+    amount
+from analytics.dbt.raw_data
+where amount > 0
+        );
+[0m11:24:54.024905 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.057 seconds
+[0m11:24:54.052616 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '64a27695-d0c0-42f7-9b55-d0e864cab079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1246f77d0>]}
+[0m11:24:54.053202 [info ] [Thread-1 (]: 1 of 2 OK created sql table model dbt.my_first_model ........................... [[32mSUCCESS 1[0m in 1.11s]
+[0m11:24:54.053578 [debug] [Thread-1 (]: Finished running node model.learn_dbt.my_first_model
+[0m11:24:54.054124 [debug] [Thread-1 (]: Began running node model.learn_dbt.my_second_model
+[0m11:24:54.054588 [info ] [Thread-1 (]: 2 of 2 START sql view model dbt.my_second_model ................................ [RUN]
+[0m11:24:54.054984 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.learn_dbt.my_first_model, now model.learn_dbt.my_second_model)
+[0m11:24:54.055213 [debug] [Thread-1 (]: Began compiling node model.learn_dbt.my_second_model
+[0m11:24:54.057090 [debug] [Thread-1 (]: Writing injected SQL for node "model.learn_dbt.my_second_model"
+[0m11:24:54.057662 [debug] [Thread-1 (]: Began executing node model.learn_dbt.my_second_model
+[0m11:24:54.069605 [debug] [Thread-1 (]: Writing runtime sql for node "model.learn_dbt.my_second_model"
+[0m11:24:54.070247 [debug] [Thread-1 (]: Using snowflake connection "model.learn_dbt.my_second_model"
+[0m11:24:54.070434 [debug] [Thread-1 (]: On model.learn_dbt.my_second_model: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "neil-snowflake-test-db", "target_name": "dev", "node_id": "model.learn_dbt.my_second_model"} */
+create or replace   view analytics.dbt.my_second_model
+  
+   as (
+    
+
+select
+    order_id,
+    amount,
+    'processed' as status
+from analytics.dbt.my_first_model
+  );
+[0m11:24:54.464506 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.394 seconds
+[0m11:24:54.466926 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '64a27695-d0c0-42f7-9b55-d0e864cab079', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1260c8730>]}
+[0m11:24:54.467585 [info ] [Thread-1 (]: 2 of 2 OK created sql view model dbt.my_second_model ........................... [[32mSUCCESS 1[0m in 0.41s]
+[0m11:24:54.468063 [debug] [Thread-1 (]: Finished running node model.learn_dbt.my_second_model
+[0m11:24:54.469152 [debug] [MainThread]: Connection 'master' was left open.
+[0m11:24:54.469464 [debug] [MainThread]: On master: Close
+[0m11:24:54.580567 [debug] [MainThread]: Connection 'model.learn_dbt.my_second_model' was left open.
+[0m11:24:54.580991 [debug] [MainThread]: On model.learn_dbt.my_second_model: Close
+[0m11:24:54.680312 [info ] [MainThread]: 
+[0m11:24:54.681088 [info ] [MainThread]: Finished running 1 project hook, 1 table model, 1 view model in 0 hours 0 minutes and 2.77 seconds (2.77s).
+[0m11:24:54.682424 [debug] [MainThread]: Command end result
+[0m11:24:54.703515 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/manifest.json
+[0m11:24:54.704986 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/semantic_manifest.json
+[0m11:24:54.709088 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/neil.lewis/Desktop/dbt_snowflake_learning/learn-dbt/target/run_results.json
+[0m11:24:54.709284 [info ] [MainThread]: 
+[0m11:24:54.709508 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:24:54.709664 [info ] [MainThread]: 
+[0m11:24:54.709838 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m11:24:54.711797 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 3.2958505, "process_in_blocks": "0", "process_kernel_time": 0.241816, "process_mem_max_rss": "149209088", "process_out_blocks": "0", "process_user_time": 1.08651}
+[0m11:24:54.712038 [debug] [MainThread]: Command `dbt run` succeeded at 11:24:54.711984 after 3.30 seconds
+[0m11:24:54.712267 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12493f9d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x126040830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12087ea50>]}
+[0m11:24:54.712475 [debug] [MainThread]: Flushing usage events
+[0m11:24:54.880578 [debug] [MainThread]: An error was encountered while trying to flush usage events
